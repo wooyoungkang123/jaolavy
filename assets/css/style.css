@@ -623,6 +623,15 @@ body {
     
     .main-header .container {
         padding: 0 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    
+    .main-header .logo {
+        position: static;
+        left: auto;
     }
     
     .logo img {
@@ -641,6 +650,8 @@ body {
     /* Show mobile menu button */
     .mobile-menu-btn {
         display: flex;
+        position: static;
+        right: auto;
     }
     
     .mobile-menu-overlay {
@@ -664,17 +675,23 @@ body {
     .hero-text {
         padding: 0;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     
     .hero-text img {
         width: 100%;
         max-width: 100%;
+        margin: 0 auto;
     }
     
     .hero-text .lecture-caption {
         width: 100%;
         margin-left: 0;
         font-size: 14px !important;
+        text-align: center;
+        margin-top: 10px;
     }
     
     .hero-text h1 {
@@ -685,26 +702,46 @@ body {
         font-size: 18px;
     }
     
+    .banner-section {
+        text-align: center;
+        padding: 25px 10px;
+    }
+    
+    .banner-content {
+        max-width: 100%;
+        overflow: hidden;
+    }
+    
     .banner-text {
         font-size: 22px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     
     .banner-icon {
         font-size: 18px;
     }
     
+    .content-section {
+        text-align: center;
+    }
+    
     .content-title {
         font-size: 22px;
         margin-bottom: 18px;
+        text-align: center;
     }
     
     .content-subtitle {
         font-size: 28px;
         margin-bottom: 12px;
+        text-align: center;
     }
     
     .content-description {
         font-size: 20px;
+        text-align: center;
     }
     
     .content-section {
@@ -934,6 +971,9 @@ body {
     
     .main-header .container {
         padding: 0 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     
     .mobile-nav {
@@ -957,30 +997,53 @@ body {
     
     .hero {
         padding: 20px 0;
+        text-align: center;
     }
     
     .hero-content {
         gap: 20px;
+        text-align: center;
     }
     
     .hero-text .lecture-caption {
         font-size: 12px !important;
+        text-align: center;
+    }
+    
+    .banner-section {
+        text-align: center;
+        padding: 20px 5px;
+    }
+    
+    .banner-content {
+        max-width: 100%;
+        overflow: hidden;
     }
     
     .banner-text {
         font-size: 18px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    .content-section {
+        text-align: center;
     }
     
     .content-title {
         font-size: 20px;
+        text-align: center;
     }
     
     .content-subtitle {
         font-size: 24px;
+        text-align: center;
     }
     
     .content-description {
         font-size: 18px;
+        text-align: center;
     }
     
     .services-grid {
@@ -993,7 +1056,7 @@ body {
     }
     
     .certificates-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: 15px;
     }
     
