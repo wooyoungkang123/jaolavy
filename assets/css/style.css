@@ -487,6 +487,44 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+    
+    .main-header {
+        padding: 15px 0;
+    }
+    
+    .main-header .container {
+        padding: 0 15px;
+    }
+    
+    .logo img {
+        height: 40px;
+    }
+    
+    .main-nav ul {
+        gap: 15px;
+    }
+    
+    .main-nav a {
+        font-size: 14px;
+    }
+    
+    .contact-link {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+    
+    .contact-icon-img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .hero {
+        padding: 30px 0;
+    }
+    
     .hero-content {
         grid-template-columns: 1fr;
         gap: 30px;
@@ -495,6 +533,18 @@ body {
     
     .hero-text {
         padding: 0;
+        text-align: center;
+    }
+    
+    .hero-text img {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .hero-text .lecture-caption {
+        width: 100%;
+        margin-left: 0;
+        font-size: 14px !important;
     }
     
     .hero-text h1 {
@@ -743,5 +793,128 @@ body {
     }
     .footer-buttons {
         justify-content: flex-start;
+    }
+}
+
+/* Extra small devices (phones) */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .main-header .container {
+        padding: 0 10px;
+    }
+    
+    .main-nav ul {
+        gap: 10px;
+    }
+    
+    .main-nav a {
+        font-size: 12px;
+    }
+    
+    .contact-link {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+    
+    .hero {
+        padding: 20px 0;
+    }
+    
+    .hero-content {
+        gap: 20px;
+    }
+    
+    .hero-text .lecture-caption {
+        font-size: 12px !important;
+    }
+    
+    .banner-text {
+        font-size: 18px;
+    }
+    
+    .content-title {
+        font-size: 20px;
+    }
+    
+    .content-subtitle {
+        font-size: 24px;
+    }
+    
+    .content-description {
+        font-size: 18px;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .service-card {
+        padding: 25px 15px;
+    }
+    
+    .certificates-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .results-title {
+        font-size: 28px;
+    }
+    
+    .results-subtitle {
+        font-size: 14px;
+    }
+    
+    .admissions-title {
+        font-size: 28px;
+    }
+    
+    .admissions-subtitle {
+        font-size: 14px;
+    }
+    
+    .university-item {
+        min-width: 120px;
+        margin: 0 15px;
+    }
+    
+    .university-icon {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .university-number {
+        font-size: 30px;
+    }
+    
+    .university-name {
+        font-size: 11px;
+    }
+    
+    .footer-info {
+        min-width: 250px;
+    }
+    
+    .footer-contact {
+        min-width: 250px;
+    }
+    
+    .footer-phone {
+        font-size: 20px;
+    }
+    
+    .footer-buttons {
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+    }
+    
+    .footer-buttons .btn {
+        width: 100%;
+        justify-content: center;
     }
 } 
