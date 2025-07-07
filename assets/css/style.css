@@ -176,7 +176,9 @@ body {
     margin-top: 10px;
     font-weight: 400;
     text-align: center;
-    transform: translateX(30%);
+    width: 185%;
+    margin-left: 0;
+    display: block;
 }
 
 .hero-text h1 {
