@@ -35,6 +35,12 @@ document.addEventListener('DOMContentLoaded', function() {
         link.addEventListener('click', closeMobileMenu);
     });
     
+    // Close menu when clicking on the logo link (header)
+    const logoLink = document.querySelector('.logo a');
+    if (logoLink) {
+        logoLink.addEventListener('click', closeMobileMenu);
+    }
+    
     // Close menu when window is resized to desktop
     window.addEventListener('resize', function() {
         if (window.innerWidth > 768) {
