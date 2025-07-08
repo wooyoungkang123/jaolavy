@@ -14,7 +14,7 @@
 body {
     font-family: var(--font-family);
     color: var(--dark-color);
-    background-color: #fdfdfd;
+    background-color: #ffffff;
 }
 
 .container {
@@ -853,7 +853,7 @@ body {
     }
     
     .admissions-title {
-        font-size: 32px;
+        font-size: 28px;
         margin-bottom: 15px;
     }
     
@@ -863,21 +863,21 @@ body {
     }
     
     .university-item {
-        min-width: 150px;
-        margin: 0 20px;
+        width: 150px;
+        padding: 15px;
     }
     
-    .university-icon {
-        width: 90px;
-        height: 90px;
-    }
-    
-    .university-number {
-        font-size: 36px;
+    .university-logo {
+        height: 40px;
     }
     
     .university-name {
-        font-size: 12px;
+        font-size: 14px;
+        margin-top: 8px;
+    }
+    
+    .university-number {
+        font-size: 14px;
     }
     
     .banner-section {
@@ -901,6 +901,45 @@ body {
     
     .service-description {
         font-size: 14px;
+    }
+
+    .about-intro-title {
+        font-size: 36px;
+    }
+
+    .about-intro-subtitle {
+        font-size: 18px;
+    }
+
+    .instructor-card {
+        flex-direction: column;
+        padding: 40px 0;
+        gap: 30px;
+    }
+
+    .instructor-card--reversed {
+        flex-direction: column-reverse;
+    }
+
+    .instructor-card--reversed .instructor-details {
+        text-align: left !important;
+    }
+    
+    .instructor-card--reversed .divider {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    
+    .instructor-card--reversed .instructor-creds {
+        display: block;
+    }
+
+    .instructor-photo {
+        justify-content: center;
+    }
+
+    .instructor-photo img {
+        max-width: 100%;
     }
 }
 
@@ -1028,6 +1067,17 @@ body {
     }
     .footer-buttons {
         justify-content: flex-start;
+    }
+    .instructor-intro-section {
+        padding: 40px 0;
+    }
+
+    .intro-image-wrapper {
+        margin-bottom: 30px;
+    }
+
+    .instructor-card + .instructor-card {
+        margin-top: 40px;
     }
 }
 
@@ -1225,7 +1275,7 @@ body {
     }
     
     .admissions-subtitle {
-        font-size: 14px;
+        font-size: 16px;
     }
     
     .university-item {
@@ -1268,4 +1318,270 @@ body {
         width: 100%;
         justify-content: center;
     }
+
+    .about-intro-title {
+        font-size: 28px;
+    }
+
+    .about-intro-subtitle {
+        font-size: 16px;
+    }
+
+    .instructor-name {
+        font-size: 32px;
+    }
+
+    .instructor-name .eng-name {
+        font-size: 22px;
+    }
+
+    .instructor-header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 70px;
+    }
+
+    .instructor-photo-v2-wrapper {
+        bottom: -75px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .university-logo-wrapper {
+        margin-top: 20px;
+        align-self: center;
+    }
+
+    .instructor-body {
+        padding-top: 100px;
+        text-align: center;
+    }
+
+    .instructor-creds-v2 li {
+        text-align: left;
+    }
+}
+
+.page-title-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+/* Instructor Intro Section */
+.instructor-intro-section {
+    padding: 60px 0;
+}
+
+.intro-image-wrapper {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.intro-image-wrapper img {
+    max-width: 80%;
+}
+
+.instructor-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 60px 0;
+    text-align: left;
+}
+
+.instructor-card + .instructor-card {
+    margin-top: 0px;
+}
+
+.instructor-card--reversed {
+    /* No styles needed here, it's just a selector hook */
+}
+
+.instructor-card--reversed .instructor-details {
+    text-align: right;
+}
+
+.instructor-card--reversed .divider {
+    background-color: #ffc107;
+    margin-left: auto; /* Align divider to the right */
+    margin-right: 0;
+}
+
+.instructor-card--reversed .instructor-creds {
+    display: inline-block; /* Allows the block to be right-aligned... */
+    text-align: left; /* ...but keeps the text inside left-aligned. */
+}
+
+.instructor-card--reversed .instructor-creds li::before {
+    color: #ffc107;
+}
+
+.instructor-card--reversed .instructor-photo {
+    justify-content: flex-start;
+}
+
+.instructor-photo {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.instructor-photo img {
+    width: 100%;
+    max-width: 380px;
+    border-radius: 15px;
+}
+
+.instructor-details {
+    flex-basis: 50%;
+}
+
+.instructor-subject {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--dark-color);
+}
+
+.instructor-name {
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 10px;
+    color: var(--dark-color);
+}
+
+.instructor-name .eng-name {
+    font-size: 30px;
+    font-weight: 400;
+    color: #888;
+    margin-left: 10px;
+}
+
+.divider {
+    width: 50px;
+    height: 4px;
+    background-color: var(--primary-color);
+    margin: 30px 0;
+}
+
+.instructor-creds {
+    list-style: none;
+    padding-left: 0;
+}
+
+.instructor-creds li {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.instructor-creds li::before {
+    content: '•';
+    color: var(--primary-color);
+    font-weight: bold;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Instructor Card v2 - Revised */
+.instructor-card-v2 {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+    margin-top: 80px;
+    overflow: hidden;
+}
+
+.instructor-header {
+    background-color: #a485d8;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 24px 40px;
+    position: relative;
+    min-height: 80px;
+}
+
+.instructor-photo-v2-wrapper {
+    position: absolute;
+    left: 40px;
+    bottom: -64px;
+    width: 128px;
+    height: 128px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.instructor-photo-v2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: block;
+    object-fit: cover;
+}
+
+.university-logo-wrapper .university-logo {
+    max-height: 45px;
+    width: auto;
+}
+
+.instructor-body {
+    padding: 88px 40px 40px;
+}
+
+.instructor-name-v2 {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--dark-color);
+}
+
+.instructor-title-v2,
+.instructor-program-v2 {
+    font-size: 15px;
+    color: #555;
+    margin-top: 8px;
+}
+
+.instructor-alumna-v2 {
+    font-size: 16px;
+    color: #6c757d;
+    margin-top: 24px;
+    font-weight: 500;
+}
+
+.instructor-alumna-v2 strong {
+    color: #212529;
+    font-weight: 700;
+}
+
+.instructor-creds-v2 {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 24px;
+}
+
+.instructor-creds-v2 li {
+    font-size: 15px;
+    color: #343a40;
+    margin-bottom: 12px;
+    padding-left: 18px;
+    position: relative;
+}
+
+.instructor-creds-v2 li::before {
+    content: '•';
+    color: #868e96;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: -1px;
+}
+
+/* Services Section */
+.services-section {
+    padding: 80px 0;
 } 
