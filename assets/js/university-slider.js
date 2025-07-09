@@ -29,14 +29,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const track = document.querySelector('.universities-track');
     if (!track) return;
 
-    const fragment = document.createDocumentFragment();
-    const numberOfLoops = 16; 
-
-    for (let i = 0; i < numberOfLoops; i++) {
+    // Create the initial set of items
+    const initialItems = [];
+    const baseLoops = 5; // Create enough to be wider than any screen
+    for (let i = 0; i < baseLoops; i++) {
         universities.forEach(uni => {
             const universityItem = document.createElement('div');
             universityItem.classList.add('university-item');
-
             universityItem.innerHTML = `
                 <div class="university-logo">
                     <img src="${uni.logo}" alt="${uni.alt}" class="university-icon">
@@ -44,9 +43,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="university-number">${uni.number}</div>
                 <div class="university-name">${uni.name}</div>
             `;
-            fragment.appendChild(universityItem);
+            initialItems.push(universityItem);
         });
     }
 
-    track.appendChild(fragment);
+    // Append the initial items
+    initialItems.forEach(item => track.appendChild(item));
+
+    // Clone the initial items and append them to create the seamless loop
+    initialItems.forEach(item => {
+        track.appendChild(item.cloneNode(true));
+    });
 }); 

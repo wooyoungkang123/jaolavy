@@ -119,7 +119,7 @@ body {
 }
 
 .contact-icon-img {
-    height: 40px;
+    height: clamp(30px, 2.5vw, 40px);
     width: auto;
     border-radius: 8px;
     vertical-align: middle;
@@ -256,73 +256,40 @@ body {
 
 /* Hero Section */
 .hero {
-    background-color: white;
-    color: #333;
-    padding: 60px 0;
-    min-height: 500px;
+    padding: 50px 0;
 }
 
 .hero .container {
-    max-width: 1200px;
-    margin: 0;
-    padding: 0 0 0 50px;
-    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .hero-content {
     display: grid;
-    grid-template-columns: 75% 25%;
-    gap: 40px;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
     align-items: center;
-    height: 100%;
 }
 
-.hero-image {
-    width: 100%;
-}
-
-.hero-image img {
+.hero-image img, 
+.hero-text img {
     width: 100%;
     height: auto;
-    object-fit: cover;
+    display: block;
     border-radius: 10px;
 }
 
 .hero-text {
-    padding: 0 10px 0 0;
-    text-align: right;
-}
-
-.hero-text img {
-    width: 185%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
+    text-align: center;
 }
 
 .hero-text .lecture-caption {
-    font-size: 15px !important;
+    font-size: 14px;
     color: #666;
     margin-top: 10px;
-    font-weight: 400;
-    text-align: center;
-    width: 185%;
-    margin-left: 0;
-    display: block;
 }
 
-.hero-text h1 {
-    font-size: 48px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    line-height: 1.2;
-}
-
-.hero-text p {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 1.6;
-}
 
 /* Banner Section */
 .banner-section {
@@ -412,7 +379,7 @@ body {
 }
 
 .service-icon {
-    font-size: 48px;
+    font-size: clamp(36px, 4vw, 48px);
     margin-bottom: 20px;
     display: block;
 }
@@ -555,8 +522,8 @@ body {
 
 .universities-track {
     display: flex;
-    animation: scroll-left 30s linear infinite;
-    width: calc(200%);
+    animation: scroll-left 60s linear infinite;
+    width: calc(260px * 40); /* 200px width + 30px margin on each side, for 40 total items */
 }
 
 @keyframes scroll-left {
@@ -1004,7 +971,7 @@ body {
     padding: 40px 0;
     background-color: #212934;
     color: #cdd2d8;
-    font-size: 13px;
+    font-size: clamp(13px, 1vw, 14px);
     line-height: 1.7;
     display: flex;
     align-items: flex-end;
@@ -1041,7 +1008,7 @@ body {
 
 .copyright {
     color: #818ca0;
-    font-size: 12px;
+    font-size: clamp(12px, 0.9vw, 13px);
     margin-top: 20px;
 }
 
@@ -1054,14 +1021,14 @@ body {
 }
 
 .footer-phone {
-    font-size: 24px;
+    font-size: clamp(22px, 1.8vw, 28px);
     font-weight: 700;
     color: #fff;
     margin-bottom: 5px;
 }
 
 .footer-hours {
-    font-size: 13px;
+    font-size: clamp(13px, 1vw, 14px);
     color: #cdd2d8;
     margin-bottom: 15px;
 }
@@ -1077,7 +1044,7 @@ body {
     padding: 8px 15px;
     border-radius: 6px;
     font-weight: 600;
-    font-size: 14px;
+    font-size: clamp(14px, 1.1vw, 16px);
     display: inline-flex;
     align-items: center;
     gap: 5px;
@@ -1099,15 +1066,15 @@ body {
 }
 
 .social-icon {
-    width: 32px;
-    height: 32px;
+    width: clamp(28px, 2.2vw, 32px);
+    height: clamp(28px, 2.2vw, 32px);
     border-radius: 50%;
     border: 1px solid #818ca0;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #818ca0;
-    font-size: 14px;
+    font-size: clamp(12px, 1vw, 14px);
     font-weight: bold;
     text-decoration: none;
 }
