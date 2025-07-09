@@ -2846,6 +2846,297 @@ textarea#remarks {
 
 @media (max-width: 768px) {
     .ap-content-container {
+        flex-direction: column;
+    }
+} 
+
+/* A-Level Course Section Styles - V4 VISUAL FLOW DESIGN */
+
+/* Main container for the A-Level section */
+.alevel-container {
+    padding: 0;
+    background-color: #fff;
+}
+
+/* Header section with main title and subtitle */
+.alevel-header {
+    text-align: center;
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.alevel-main-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--dark-color);
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+}
+
+.alevel-subtitle {
+    font-size: 20px;
+    color: #555;
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Common styling for sections within A-Level tab */
+.alevel-section {
+    margin-bottom: 0;
+}
+
+/* Premium "Signature" course section */
+.signature-section {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    margin-left: -50vw;
+}
+
+.alevel-section-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.signature-main-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--dark-color);
+    margin-bottom: 20px;
+}
+
+.signature-highlight {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--dark-color);
+    margin-bottom: 30px;
+}
+
+.highlight-red {
+    color: #e74c3c;
+}
+
+.signature-description {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+}
+
+/* Process Flow */
+.process-flow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.process-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.process-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.process-circle:hover {
+    transform: scale(1.05);
+}
+
+.process-circle.red {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.process-circle.white {
+    background-color: #fff;
+    color: var(--dark-color);
+    border: 3px solid #e74c3c;
+}
+
+.process-circle.dark {
+    background-color: var(--dark-color);
+    color: #fff;
+}
+
+.process-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.process-subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    display: block;
+    line-height: 1.3;
+}
+
+.process-arrow {
+    font-size: 24px;
+    color: #999;
+    font-weight: bold;
+}
+
+/* A-Level Types Section */
+.types-section {
+    padding: 80px 0;
+    background-color: #fff;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    margin-left: -50vw;
+}
+
+.alevel-section-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--dark-color);
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+/* Grid layout for course type cards */
+.alevel-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Individual course cards */
+.alevel-card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #f0f0f0;
+}
+
+.alevel-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+    color: #fff;
+    padding: 25px 30px;
+    text-align: center;
+}
+
+.card-header h4 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.card-content {
+    padding: 30px;
+}
+
+.feature-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.feature-item {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    padding-left: 25px;
+    position: relative;
+}
+
+.feature-item::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #27ae60;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .alevel-grid {
         grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .process-flow {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .process-arrow {
+        transform: rotate(90deg);
+    }
+}
+@media (max-width: 768px) {
+    .alevel-header {
+        padding: 40px 0;
+    }
+    .alevel-main-title {
+        font-size: 32px;
+    }
+    .alevel-subtitle {
+        font-size: 18px;
+    }
+    .signature-main-title {
+        font-size: 28px;
+    }
+    .signature-highlight {
+        font-size: 20px;
+    }
+    .alevel-section-title {
+        font-size: 28px;
+    }
+    .signature-section {
+        padding: 60px 0;
+    }
+    .types-section {
+        padding: 60px 0;
+    }
+    .process-circle {
+        width: 120px;
+        height: 120px;
+    }
+    .process-title {
+        font-size: 18px;
+    }
+    .process-subtitle {
+        font-size: 12px;
+    }
+    .card-header {
+        padding: 20px;
+    }
+    .card-content {
+        padding: 25px;
     }
 } 

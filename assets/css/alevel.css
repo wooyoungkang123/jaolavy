@@ -1,0 +1,275 @@
+/* assets/css/alevel.css */
+
+/* --- General Container --- */
+.alevel-new-container {
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    background-color: #f8f9fa;
+    padding: 60px 40px;
+    border-radius: 24px;
+}
+
+.alevel-section {
+    margin-bottom: 80px;
+}
+
+.alevel-section:last-child {
+    margin-bottom: 0;
+}
+
+/* --- Section 1: Process Flow --- */
+.alevel-section-title {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: #212529;
+    line-height: 1.4;
+}
+
+.alevel-section-subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #6c757d;
+    margin-bottom: 60px;
+}
+
+.alevel-process-flow {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.process-card {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 20px;
+    padding: 30px 25px;
+    text-align: center;
+    width: 280px;
+    position: relative;
+    top: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.process-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.process-card-label {
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 20px;
+    padding: 6px 20px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #495057;
+}
+
+.process-icon {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.process-icon svg {
+    width: 48px;
+    height: 48px;
+    color: #e53935;
+    stroke-width: 1.5;
+}
+
+.process-card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #212529;
+}
+
+.process-card-description {
+    font-size: 1rem;
+    color: #495057;
+    line-height: 1.5;
+}
+
+.process-card.active {
+    background-color: #e53935;
+    border-color: #e53935;
+    color: #fff;
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(229, 57, 53, 0.3);
+}
+
+.process-card.active .process-card-label,
+.process-card.active .process-card-title {
+    color: #e53935;
+}
+
+.process-card.active .process-card-label {
+    background-color: #fff;
+    border-color: #e53935;
+}
+
+.process-card.active .process-icon svg {
+    color: #fff;
+}
+
+.process-card.active .process-card-title {
+    color: #fff;
+}
+
+.process-card.active .process-card-description {
+    color: #fff;
+    opacity: 0.9;
+}
+
+
+/* --- Section 2: New Design from Image --- */
+.alevel-section--red-bg {
+    background-color: #EF3340;
+    padding: 80px 40px;
+    border-radius: 24px;
+}
+
+.learning-flow-cards-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: nowrap;
+    margin-bottom: 60px;
+}
+
+.learning-flow-card {
+    background-color: #ffffff;
+    border-radius: 25px;
+    width: 280px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.learning-flow-card__header {
+    background-color: #4A4A4A;
+    padding: 25px 30px;
+    color: #ffffff;
+}
+
+.learning-flow-card .learning-flow-card__header h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+.learning-flow-card__body {
+    padding: 25px 30px 30px;
+    flex-grow: 1;
+}
+
+.learning-flow-card__body ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.learning-flow-card__body li {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.learning-flow-card__body li:last-child {
+    margin-bottom: 0;
+}
+
+.icon-check {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: #4A4A4A;
+    color: white;
+    border-radius: 4px;
+    margin-right: 12px;
+    position: relative;
+    text-align: center;
+    font-style: normal;
+    line-height: 24px;
+    flex-shrink: 0;
+}
+
+.icon-check::before {
+    content: '✓';
+    font-weight: bold;
+}
+
+.learning-flow-cta-wrapper {
+    text-align: center;
+}
+
+.learning-flow-cta {
+    display: inline-block;
+    background: linear-gradient(to top, #FFC107, #FFD54F);
+    color: #212529;
+    font-size: 1.6rem;
+    font-weight: 800;
+    padding: 18px 60px;
+    border-radius: 100px;
+    text-decoration: none;
+    box-shadow: 0 5px 0 #E0A800, 0 8px 15px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s ease-in-out;
+}
+
+.learning-flow-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 0 #E0A800, 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.learning-flow-cta:active {
+    transform: translateY(2px);
+    box-shadow: 0 3px 0 #E0A800, 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 1024px) {
+    .learning-flow-cards-wrapper {
+        flex-wrap: wrap;
+    }
+    .learning-flow-card {
+        width: calc(50% - 15px);
+    }
+}
+
+@media (max-width: 768px) {
+    .alevel-section-title {
+        font-size: 2.2rem;
+    }
+    .alevel-new-container {
+        padding: 40px 15px;
+    }
+    .alevel-section--red-bg {
+        padding: 60px 20px;
+    }
+    .learning-flow-cards-wrapper {
+        flex-wrap: wrap;
+    }
+    .learning-flow-card {
+        width: 100%;
+        max-width: 400px;
+    }
+    .learning-flow-cta {
+        font-size: 1.4rem;
+        padding: 15px 50px;
+    }
+} 
