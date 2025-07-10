@@ -1,7 +1,7 @@
-/* assets/css/alevel.css */
+/* assets/css/igcse.css */
 
 /* --- General Container --- */
-.alevel-new-container {
+.igcse-new-container {
     font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
     background-color: #f8f9fa;
     padding: 60px 40px;
@@ -9,17 +9,17 @@
 }
 
 /* --- 프로그램 메인 제목 --- */
-.alevel-program-header {
+.igcse-program-header {
     text-align: center;
     margin-bottom: 60px;
     padding: 40px 20px;
-    background: linear-gradient(135deg, #e53935, #ff5722);
+    background: linear-gradient(135deg, #1976d2, #2196f3);
     border-radius: 20px;
     position: relative;
     overflow: hidden;
 }
 
-.alevel-program-header::before {
+.igcse-program-header::before {
     content: '';
     position: absolute;
     top: 0;
@@ -30,7 +30,7 @@
     opacity: 0.3;
 }
 
-.alevel-program-title {
+.igcse-program-title {
     font-size: 3.2rem;
     font-weight: 900;
     color: #ffffff;
@@ -41,7 +41,7 @@
     z-index: 1;
 }
 
-.alevel-program-title::after {
+.igcse-program-title::after {
     content: '';
     position: absolute;
     bottom: -15px;
@@ -53,8 +53,8 @@
     border-radius: 2px;
 }
 
-/* --- 에이레벨이란? 섹션 --- */
-.alevel-intro-section {
+/* --- IGCSE란? 섹션 --- */
+.igcse-intro-section {
     margin-bottom: 80px;
     background-color: #ffffff;
     border-radius: 20px;
@@ -62,12 +62,12 @@
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 
-.alevel-intro-header {
+.igcse-intro-header {
     text-align: center;
     margin-bottom: 50px;
 }
 
-.alevel-intro-title {
+.igcse-intro-title {
     font-size: 2.5rem;
     font-weight: 800;
     color: #212529;
@@ -75,7 +75,7 @@
     position: relative;
 }
 
-.alevel-intro-title::after {
+.igcse-intro-title::after {
     content: '';
     position: absolute;
     bottom: -10px;
@@ -83,29 +83,29 @@
     transform: translateX(-50%);
     width: 60px;
     height: 4px;
-    background: linear-gradient(to right, #e53935, #ff5722);
+    background: linear-gradient(to right, #1976d2, #2196f3);
     border-radius: 2px;
 }
 
-.alevel-intro-subtitle {
+.igcse-intro-subtitle {
     font-size: 1.2rem;
     color: #6c757d;
     font-weight: 500;
 }
 
-.alevel-intro-content {
+.igcse-intro-content {
     max-width: 1000px;
     margin: 0 auto;
 }
 
-.alevel-intro-grid {
+.igcse-intro-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-top: 40px;
 }
 
-.alevel-intro-card {
+.igcse-intro-card {
     background-color: #ffffff;
     border: 2px solid #f1f3f4;
     border-radius: 16px;
@@ -116,33 +116,33 @@
     overflow: hidden;
 }
 
-.alevel-intro-card::before {
+.igcse-intro-card::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(to right, #e53935, #ff5722);
+    background: linear-gradient(to right, #1976d2, #2196f3);
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
 
-.alevel-intro-card:hover {
+.igcse-intro-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-    border-color: #e53935;
+    border-color: #1976d2;
 }
 
-.alevel-intro-card:hover::before {
+.igcse-intro-card:hover::before {
     transform: scaleX(1);
 }
 
-.alevel-intro-icon {
+.igcse-intro-icon {
     width: 70px;
     height: 70px;
     margin: 0 auto 25px;
-    background: linear-gradient(135deg, #e53935, #ff5722);
+    background: linear-gradient(135deg, #1976d2, #2196f3);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -150,19 +150,19 @@
     transition: all 0.3s ease;
 }
 
-.alevel-intro-icon svg {
+.igcse-intro-icon svg {
     width: 32px;
     height: 32px;
     color: #ffffff;
     stroke-width: 2;
 }
 
-.alevel-intro-card:hover .alevel-intro-icon {
+.igcse-intro-card:hover .igcse-intro-icon {
     transform: scale(1.1);
-    box-shadow: 0 8px 25px rgba(229, 57, 53, 0.3);
+    box-shadow: 0 8px 25px rgba(25, 118, 210, 0.3);
 }
 
-.alevel-intro-card h3 {
+.igcse-intro-card h3 {
     font-size: 1.4rem;
     font-weight: 700;
     color: #212529;
@@ -170,23 +170,23 @@
     line-height: 1.3;
 }
 
-.alevel-intro-card p {
+.igcse-intro-card p {
     font-size: 1rem;
     color: #6c757d;
     line-height: 1.6;
     margin: 0;
 }
 
-.alevel-section {
+.igcse-section {
     margin-bottom: 80px;
 }
 
-.alevel-section:last-child {
+.igcse-section:last-child {
     margin-bottom: 0;
 }
 
 /* --- Section 1: Process Flow --- */
-.alevel-section-title {
+.igcse-section-title {
     text-align: center;
     font-size: 2.8rem;
     font-weight: 800;
@@ -195,14 +195,14 @@
     line-height: 1.4;
 }
 
-.alevel-section-subtitle {
+.igcse-section-subtitle {
     text-align: center;
     font-size: 1.1rem;
     color: #6c757d;
     margin-bottom: 60px;
 }
 
-.alevel-process-flow {
+.igcse-process-flow {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -210,7 +210,7 @@
     flex-wrap: wrap;
 }
 
-.process-card {
+.igcse-process-card {
     background-color: #ffffff;
     border: 1px solid #dee2e6;
     border-radius: 20px;
@@ -226,12 +226,12 @@
     justify-content: space-between;
 }
 
-.process-card:hover {
+.igcse-process-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
-.process-card-label {
+.igcse-process-card-label {
     position: absolute;
     top: -18px;
     left: 50%;
@@ -245,71 +245,71 @@
     color: #495057;
 }
 
-.process-icon {
+.igcse-process-icon {
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.process-icon svg {
+.igcse-process-icon svg {
     width: 48px;
     height: 48px;
-    color: #e53935;
+    color: #1976d2;
     stroke-width: 1.5;
 }
 
-.process-card-title {
+.igcse-process-card-title {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 10px;
     color: #212529;
 }
 
-.process-card-description {
+.igcse-process-card-description {
     font-size: 1rem;
     color: #495057;
     line-height: 1.5;
 }
 
-.process-card.active {
-    background-color: #e53935;
-    border-color: #e53935;
+.igcse-process-card.active {
+    background-color: #1976d2;
+    border-color: #1976d2;
     color: #fff;
     transform: translateY(-10px);
-    box-shadow: 0 15px 35px rgba(229, 57, 53, 0.3);
+    box-shadow: 0 15px 35px rgba(25, 118, 210, 0.3);
 }
 
-.process-card.active .process-card-label,
-.process-card.active .process-card-title {
-    color: #e53935;
+.igcse-process-card.active .igcse-process-card-label,
+.igcse-process-card.active .igcse-process-card-title {
+    color: #1976d2;
 }
 
-.process-card.active .process-card-label {
+.igcse-process-card.active .igcse-process-card-label {
     background-color: #fff;
-    border-color: #e53935;
+    border-color: #1976d2;
 }
 
-.process-card.active .process-icon svg {
+.igcse-process-card.active .igcse-process-icon svg {
     color: #fff;
 }
 
-.process-card.active .process-card-title {
+.igcse-process-card.active .igcse-process-card-title {
     color: #fff;
 }
 
-.process-card.active .process-card-description {
+.igcse-process-card.active .igcse-process-card-description {
     color: #fff;
     opacity: 0.9;
 }
 
 
 /* --- Section 2: New Design from Image --- */
-.alevel-section--red-bg {
-    background-color: #EF3340;
+.igcse-section--blue-bg {
+    background-color: #1976d2;
     padding: 80px 40px;
     border-radius: 24px;
 }
 
-.learning-flow-cards-wrapper {
+.igcse-learning-flow-cards-wrapper {
     display: flex;
     justify-content: center;
     gap: 25px;
@@ -317,7 +317,7 @@
     margin-bottom: 60px;
 }
 
-.learning-flow-card {
+.igcse-learning-flow-card {
     background-color: #ffffff;
     border-radius: 25px;
     width: 280px;
@@ -327,13 +327,13 @@
     flex-direction: column;
 }
 
-.learning-flow-card__header {
+.igcse-learning-flow-card__header {
     background-color: #4A4A4A;
     padding: 25px 30px;
     color: #ffffff;
 }
 
-.learning-flow-card .learning-flow-card__header h3 {
+.igcse-learning-flow-card .igcse-learning-flow-card__header h3 {
     font-size: 1.5rem;
     font-weight: 600;
     margin: 0;
@@ -342,18 +342,18 @@
     white-space: nowrap;
 }
 
-.learning-flow-card__body {
+.igcse-learning-flow-card__body {
     padding: 25px 30px 30px;
     flex-grow: 1;
 }
 
-.learning-flow-card__body ul {
+.igcse-learning-flow-card__body ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.learning-flow-card__body li {
+.igcse-learning-flow-card__body li {
     display: flex;
     align-items: center;
     font-size: 1.1rem;
@@ -363,11 +363,11 @@
     font-weight: 500;
 }
 
-.learning-flow-card__body li:last-child {
+.igcse-learning-flow-card__body li:last-child {
     margin-bottom: 0;
 }
 
-.icon-check {
+.igcse-icon-check {
     display: inline-block;
     width: 24px;
     height: 24px;
@@ -382,16 +382,16 @@
     flex-shrink: 0;
 }
 
-.icon-check::before {
+.igcse-icon-check::before {
     content: '✓';
     font-weight: bold;
 }
 
-.learning-flow-cta-wrapper {
+.igcse-learning-flow-cta-wrapper {
     text-align: center;
 }
 
-.learning-flow-cta {
+.igcse-learning-flow-cta {
     display: inline-block;
     background: linear-gradient(to top, #FFC107, #FFD54F);
     color: #212529;
@@ -404,78 +404,72 @@
     transition: all 0.2s ease-in-out;
 }
 
-.learning-flow-cta:hover {
+.igcse-learning-flow-cta:hover {
     transform: translateY(-2px);
     box-shadow: 0 7px 0 #E0A800, 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-.learning-flow-cta:active {
+.igcse-learning-flow-cta:active {
     transform: translateY(2px);
     box-shadow: 0 3px 0 #E0A800, 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* --- Responsive Adjustments --- */
 @media (max-width: 1024px) {
-    .alevel-intro-grid {
+    .igcse-intro-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 25px;
     }
     
-    .learning-flow-cards-wrapper {
+    .igcse-learning-flow-cards-wrapper {
         flex-wrap: wrap;
     }
-    .learning-flow-card {
+    .igcse-learning-flow-card {
         width: calc(50% - 15px);
     }
 }
 
 @media (max-width: 768px) {
-    .alevel-section-title {
+    .igcse-section-title {
         font-size: 2.2rem;
     }
-    .alevel-new-container {
+    .igcse-new-container {
         padding: 40px 15px;
     }
-    .alevel-section--red-bg {
+    .igcse-section--blue-bg {
         padding: 60px 20px;
     }
-    .learning-flow-cards-wrapper {
+    .igcse-learning-flow-cards-wrapper {
         flex-wrap: wrap;
     }
-    .learning-flow-card {
+    .igcse-learning-flow-card {
         width: 100%;
         max-width: 400px;
     }
-    .learning-flow-cta {
+    .igcse-learning-flow-cta {
         font-size: 1.4rem;
         padding: 15px 50px;
     }
     
-    .alevel-program-header {
-        margin-bottom: 40px;
-        padding: 30px 15px;
-    }
-    
-    .alevel-program-title {
-        font-size: 2.2rem;
-        line-height: 1.3;
-    }
-    
-    .alevel-intro-section {
+    .igcse-intro-section {
         padding: 40px 20px;
         margin-bottom: 60px;
     }
     
-    .alevel-intro-title {
+    .igcse-intro-title {
         font-size: 2rem;
     }
     
-    .alevel-intro-grid {
+    .igcse-intro-grid {
         grid-template-columns: 1fr;
         gap: 20px;
     }
     
-    .alevel-intro-card {
+    .igcse-intro-card {
         padding: 30px 20px;
+    }
+    
+    .igcse-program-title {
+        font-size: 2.4rem;
     }
 } 
